@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\.Net\\StoreApp\\StoreApp.Data\\StoreApp.Data.csproj": {}
+    "C:\\.Net\\StoreApp\\StoreApp.Data\\StoreApp.data.csproj": {}
   },
   "projects": {
-    "C:\\.Net\\StoreApp\\StoreApp.Data\\StoreApp.Data.csproj": {
+    "C:\\.Net\\StoreApp\\StoreApp.Data\\StoreApp.data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\.Net\\StoreApp\\StoreApp.Data\\StoreApp.Data.csproj",
-        "projectName": "StoreApp.Data",
-        "projectPath": "C:\\.Net\\StoreApp\\StoreApp.Data\\StoreApp.Data.csproj",
+        "projectUniqueName": "C:\\.Net\\StoreApp\\StoreApp.Data\\StoreApp.data.csproj",
+        "projectName": "StoreApp.data",
+        "projectPath": "C:\\.Net\\StoreApp\\StoreApp.Data\\StoreApp.data.csproj",
         "packagesPath": "C:\\Users\\msi-nb\\.nuget\\packages\\",
         "outputPath": "C:\\.Net\\StoreApp\\StoreApp.Data\\obj\\",
         "projectStyle": "PackageReference",

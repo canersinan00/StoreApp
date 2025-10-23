@@ -4,12 +4,12 @@
     "C:\\.Net\\StoreApp\\StoreApp.Web\\StoreApp.Web.csproj": {}
   },
   "projects": {
-    "C:\\.Net\\StoreApp\\StoreApp.Data\\StoreApp.Data.csproj": {
+    "C:\\.Net\\StoreApp\\StoreApp.Data\\StoreApp.data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\.Net\\StoreApp\\StoreApp.Data\\StoreApp.Data.csproj",
-        "projectName": "StoreApp.Data",
-        "projectPath": "C:\\.Net\\StoreApp\\StoreApp.Data\\StoreApp.Data.csproj",
+        "projectUniqueName": "C:\\.Net\\StoreApp\\StoreApp.Data\\StoreApp.data.csproj",
+        "projectName": "StoreApp.data",
+        "projectPath": "C:\\.Net\\StoreApp\\StoreApp.Data\\StoreApp.data.csproj",
         "packagesPath": "C:\\Users\\msi-nb\\.nuget\\packages\\",
         "outputPath": "C:\\.Net\\StoreApp\\StoreApp.Data\\obj\\",
         "projectStyle": "PackageReference",
@@ -96,8 +96,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\.Net\\StoreApp\\StoreApp.Data\\StoreApp.Data.csproj": {
-                "projectPath": "C:\\.Net\\StoreApp\\StoreApp.Data\\StoreApp.Data.csproj"
+              "C:\\.Net\\StoreApp\\StoreApp.Data\\StoreApp.data.csproj": {
+                "projectPath": "C:\\.Net\\StoreApp\\StoreApp.Data\\StoreApp.data.csproj"
               }
             }
           }
