@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StoreApp.data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f0ddf7cf1170a2d32655a431dff5e354ce6d5a9e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+903b728c38b5231fdddc99cea83adc7669ad3231")]
 [assembly: System.Reflection.AssemblyProductAttribute("StoreApp.data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StoreApp.data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
