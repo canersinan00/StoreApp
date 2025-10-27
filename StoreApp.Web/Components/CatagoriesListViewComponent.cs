@@ -12,8 +12,8 @@ public class CatagoriesListViewComponent : ViewComponent
     }
     public IViewComponentResult Invoke()
     {
-        return View(_storeRepository.Products
-            .Select(p => p.Category)
+        return View(_storeRepository
+            .Products
             .Distinct()
             .OrderBy(c => c));
     }
