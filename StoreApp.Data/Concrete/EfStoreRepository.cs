@@ -10,7 +10,7 @@ public class EfStoreRepository : IStoreRepository
         _context = context;
     }
     public IQueryable<Product> Products => _context.Products;
-
+    public IQueryable<Category> Categories => _context.Categories;
     public void CreateProduct(Product entity)
     {
         throw new NotImplementedException();
