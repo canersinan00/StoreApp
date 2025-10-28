@@ -127,3 +127,5 @@ C:\.Net\StoreApp\StoreApp.Web\obj\Debug\net8.0\StoreApp.Web.genruntimeconfig.cac
 C:\.Net\StoreApp\StoreApp.Web\obj\Debug\net8.0\ref\StoreApp.Web.dll
 C:\.Net\StoreApp\StoreApp.Web\bin\Debug\net8.0\libman.json
 C:\.Net\StoreApp\StoreApp.Web\bin\Debug\net8.0\StoreApp.Web.staticwebassets.runtime.json
+C:\.Net\StoreApp\StoreApp.Web\bin\Debug\net8.0\AutoMapper.dll
+C:\.Net\StoreApp\StoreApp.Web\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
