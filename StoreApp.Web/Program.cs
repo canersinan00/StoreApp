@@ -6,6 +6,7 @@ using StoreApp.Web.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
+builder.Services.AddRazorPages();
 
 builder.Services.AddAutoMapper(typeof(MapperProfile).Assembly);
 builder.Services.AddDbContext<StoreDbContext>(options =>
@@ -15,10 +16,13 @@ builder.Services.AddDbContext<StoreDbContext>(options =>
 });
 
 builder.Services.AddScoped<IStoreRepository, EfStoreRepository>();
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession();
 
 var app = builder.Build();
 
 app.UseStaticFiles();
+app.UseSession();
 
 app.MapControllerRoute("product_in_category", "products/{category?}", new { controller = "Home", action = "Index" });
 
@@ -26,5 +30,6 @@ app.MapControllerRoute("product_details", "{name}", new { controller = "Home", a
 
 
 app.MapDefaultControllerRoute();
+app.MapRazorPages();
 
 app.Run();
