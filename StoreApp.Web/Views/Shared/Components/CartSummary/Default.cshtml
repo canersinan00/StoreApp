@@ -1,0 +1,17 @@
+@model Cart
+
+@using StoreApp.Web.Models
+@using StoreApp.Web.TagHelpers
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, StoreApp.Web
+
+
+@if(Model?.Items.Count() > 0)
+{
+    <a href="/Cart" class="btn btn-sm btn-warning">Go to Cart</a>
+    
+    <small class="text-white">
+        @Model?.Items.Sum(i => i.Quantity) products.
+       [@Model?.CalculateTotal()]
+    </small>
+}
