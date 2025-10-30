@@ -1,40 +1,61 @@
 ﻿@page
 @model StoreApp.Web.Pages.CartModel
+@namespace StoreApp.Web.Pages
+@using Microsoft.AspNetCore.Mvc.RazorPages
 @using StoreApp.Web.Models
+@using StoreApp.Web.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
 <h2>Shopping Cart</h2>
 
-<table class="table table-bordered table-striped">
-    <thead>
-        <tr>
-            <th>Quantity</th>
-            <th>Item</th>
-            <th>Price</th>
-            <th>Total</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach(var item in (Model?.Cart?.Items ?? new List<CartItem>()))
-            {
-                <tr>
-                    <td>item.Quantity</td>
-                    <td>item.Product.Name</td>
-                    <td>item.Product.Price</td>
-                    <td>
-                        @((item.Quantity * item.Product.Price).ToString()) ₺
-                    </td>
-                </tr>
-            }
-    </tbody>
-    <tfoot>
-        <tr>
-            <td colspan="3">Total : </td>
-            <td>
-                @Model?.Cart?.CalculateTotal() ₺
-            </td>
-        </tr>
-    </tfoot>
-</table>
+ @if(Model?.Cart?.Items.Count() == 0)
+    {
+        <div class="alert alert-warning">Product Not Added</div>
+    }
+    else
+    {
+        <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Quantity</th>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                
+                @foreach(var item in (Model?.Cart?.Items ?? new List<CartItem>()))
+                    {
+                        <tr>
+                                <td>@item.Quantity</td>
+                                <td>@item.Product.Name</td>
+                                <td>@item.Product.Price</td>
+                                <td>
+                                    @((item.Quantity * item.Product.Price).ToString()) ₺
+                                </td>
+                                <td>
+                                    <form  method="post" asp-page-handler="Remove">
+                                        <input type="hidden" name="Id" value="@item.Product.Id">
+                                        <button type="submit"class="btn btn-sm btn-danger">Delete</button>
+                                    </form>
+                                </td>
+                        </tr>
+                    }
+                    
+                
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total : </td>
+                        <td>
+                            @Model?.Cart?.CalculateTotal() ₺
+                        </td>
+                    </tr>
+                </tfoot>
+        </table>
+    }
 
 <div>
     <a class="btn btn-primary" href="/">Continue Shopping</a>
