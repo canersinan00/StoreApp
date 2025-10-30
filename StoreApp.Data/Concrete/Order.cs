@@ -1,7 +1,3 @@
-using System;
-
-namespace StoreApp.Data.Concrete;
-
 public class Order
 {
     public int Id { get; set; }
@@ -11,23 +7,15 @@ public class Order
     public string Phone { get; set; } = null!;
     public string Email { get; set; } = null!;
     public string AdressLine { get; set; } = null!;
-
-    public List<OrderItem> OrderItems { get; set; }
-
+    public ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>(); 
 }
 
 public class OrderItem
 {
     public int Id { get; set; }
-    public int OrderId { get; set; }
-    public Order Order { get; set; } = new();
-
+    public int OrderId { get; set; }           // FK
     public int ProductId { get; set; }
-    public Product Product { get; set; } = new();
-
-    public double Price { get; set; }
+    public decimal Price { get; set; }         // para: decimal
     public int Quantity { get; set; }
-
-
-
+    public Order Order { get; set; } = null!;
 }

@@ -1,0 +1,14 @@
+@page 
+
+<div class="text-center">
+    <h2>Thank You For Order.</h2>
+    <p>#@OrderId created number of order.</p>
+    <p>Your order will be sent as soon as possible.</p>
+    <a href="/" class="btn btn-primary">Home Page</a>
+</div>
+
+@functions{
+    [BindProperty(SupportsGet = true)]
+    
+    public string? OrderId{get; set;}
+}

@@ -22,6 +22,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/.Net/StoreApp/StoreApp.Web/Pages/Complated.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcGxhdGVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/.Net/StoreApp/StoreApp.Web/Pages/Shared/_CardLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9DYXJkTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
