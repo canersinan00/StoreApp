@@ -129,3 +129,5 @@ C:\.Net\StoreApp\StoreApp.Web\bin\Debug\net8.0\libman.json
 C:\.Net\StoreApp\StoreApp.Web\bin\Debug\net8.0\StoreApp.Web.staticwebassets.runtime.json
 C:\.Net\StoreApp\StoreApp.Web\bin\Debug\net8.0\AutoMapper.dll
 C:\.Net\StoreApp\StoreApp.Web\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\.Net\StoreApp\StoreApp.Web\bin\Debug\net8.0\Iyzipay.dll
+C:\.Net\StoreApp\StoreApp.Web\bin\Debug\net8.0\Newtonsoft.Json.dll
